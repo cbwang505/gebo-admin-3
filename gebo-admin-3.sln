@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "gebo-admin-3", ".", "{BB6B1FAA-1004-456B-99F2-86486C1F604F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/gebo-admin-3"
+		Debug.AspNetCompiler.PhysicalPath = "D:\lfq\html\gebo-admin-3\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\gebo-admin-3\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/gebo-admin-3"
+		Release.AspNetCompiler.PhysicalPath = "D:\lfq\html\gebo-admin-3\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\gebo-admin-3\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "2371"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB6B1FAA-1004-456B-99F2-86486C1F604F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB6B1FAA-1004-456B-99F2-86486C1F604F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

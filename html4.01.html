@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+"http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title></title>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				
+				$('.hilight').hilight();
+			});
+			(function($) {
+				// 插件的定义    
+				$.fn.hilight = function(options) {
+					
+					// build main options before element iteration    
+					var opts = $.extend({}, $.fn.hilight.defaults, options);
+					// iterate and reformat each matched element    
+					return this.each(function() {
+						$this = $(this);
+						// build element specific options    
+						var o =  opts;
+						// update element styles    
+						$this.css({
+							backgroundColor: o.background,
+							color: o.foreground
+						});
+						var markup = $this.html();
+						// call our format function    
+						markup = $.fn.hilight.format(markup);
+						$this.html(markup);
+					});
+				};
+				// 私有函数：debugging    
+				function debug($obj) {
+					if (window.console && window.console.log)
+						window.console.log('hilight selection count: ' + $obj.size());
+				};
+				// 定义暴露format函数    
+				$.fn.hilight.format = function(txt) {
+					return '<strong>' + txt + '</strong>';
+				};
+				// 插件的defaults    
+				$.fn.hilight.defaults = {
+					foreground: 'red',
+					background: 'yellow'
+				};
+				// 闭包结束    
+			})(jQuery);
+		</script>
+	</head>
+
+	<body>
+		<div class="hilight ">
+			Have a nice day!
+		</div>
+		<div class="hilight">
+			Have a nice day!
+		</div>
+		<div class="hilight">
+			Have a nice day!
+		</div>
+		现在我们能高亮哪些div仅使用一行脚本：
+
+	</body>
+
+</html>
